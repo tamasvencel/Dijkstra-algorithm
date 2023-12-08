@@ -31,8 +31,8 @@ int main(int argc, char* argv[]) {
         int u, v;
         double weight;
         inputFile >> u >> v >> weight;
-        graph[u - 1].emplace_back(v - 1, weight/10.0);
-        graph[v - 1].emplace_back(u - 1, weight/10.0); // For undirected graph
+        graph[u - 1].emplace_back(v - 1, weight);
+        graph[v - 1].emplace_back(u - 1, weight);
     }
 
     // print graph
